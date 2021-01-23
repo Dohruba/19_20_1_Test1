@@ -53,7 +53,7 @@ public class rechnerTest {
         Calculator calcTest = createAndBack2Zero();
         calcTest.sub(5);
         int lastSavedNumber = CalculatorImpl.getLastInt();
-        Assert.assertEquals(5,lastSavedNumber);
+        Assert.assertEquals(-5,lastSavedNumber);
     }
 
     @Test(expected = Exception.class)
